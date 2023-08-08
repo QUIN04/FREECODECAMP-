@@ -1,0 +1,70 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px;
+}
+nav{
+
+    background-color: #eee;
+    border-right: 2px solid #777;
+    width: 300px;
+    height: 100vh;
+    overflow-y: none;
+}
+nav header{
+    padding: 15px;
+}
+nav a{
+    border-top: 2px solid #777;
+    color: #000;
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+}
+
+main{
+    background-color: #fff;
+    flex: 1;
+    height: 100vh;
+    overflow-y: scroll;
+    
+}
+
+section{
+    padding: 13px;
+    line-height: 1.5;
+}
+section h2{
+    font-size: 15px;
+}
+
+header{
+    font-size: 20px;
+   font-weight: 550;
+    padding:10px;
+    
+}
+
+pre{
+    background:#eee;
+    padding: 10px;
+}
+
+@media (max-width: 600px) {
+    nav{
+        border-right: none;
+        border-bottom: 2px solid #777;
+        height: auto;
+        overflow-y: scroll;
+        width: 100%;
+    }
+    main{
+        height: auto;
+        width: 100%;
+    }
+}
