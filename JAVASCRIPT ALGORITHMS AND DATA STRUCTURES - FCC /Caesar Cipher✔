@@ -1,0 +1,7 @@
+function rot13(str) {
+  const alphabet = ['A','B', 'C','D','E','F','G','H','I','J','K','L','M','N', 'O','P','Q','R','S','T','U','V','W','X','Y','Z'];
+  return str.split('')
+ .map( value => {let indexOfVal = alphabet.indexOf(value); return alphabet.indexOf(value) === -1 ? value  : 
+  indexOfVal-13 < 0 ? alphabet[indexOfVal+13] : 
+alphabet[indexOfVal-13] })
+.join('');
